@@ -152,7 +152,7 @@ void graph_align(Align aln) {
         wall_t = gpu_graph_align(aln, 0, aln.num_reads);
     }
 
-    // aln.print_results();
+    aln.print_results();
 
     cout << "Time: " << wall_t << "s, GCUPS: " << (double)aln.num_v * aln.max_read_len * aln.num_reads / wall_t / 1000000000
          << endl;
